@@ -1,0 +1,24 @@
+body{
+	/*margin-top: 100px;*/
+	padding: 70px;
+	font-family: Lato;
+	}
+.jumbotron{
+	color:#2c3e50;
+	background:#ecf0f1;
+}
+hr{
+	width: 800px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(1,1,1,0.2);
+}
+#Readmore{
+	margin:0 100px;
+}
+
+#smline{
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(1,1,1,0.2);
+
+}
