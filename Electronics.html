@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script src="https://kit.fontawesome.com/7e00ded5b8.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Shakankerystyle.css">
+
+	<!-- style css -->
+	<style type="text/css">
+		p{
+			font-size: 1.2em;
+			font-weight: 500;
+		}
+
+		h1,h2,h3,h4,h5{
+			font-weight: bold;
+			text-decoration-line: underline;
+		}
+		li{
+			font-weight: bold;
+		}
+		#tips{
+			background: #ecf0f1;
+			border: 1px solid #2c3e50;
+		}
+		#do{
+			color: green;
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+		#don{
+			color: red;
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+		#test{
+			font-size: 1em;
+		}
+
+		#D2{
+			background: #ecf0f1;
+
+		}
+	</style>
+
+
+	<title>Electronics</title>
+</head>
+<body>
+
+<!-- NavBar -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
+			<a class="navbar-brand" href="index.html"><i class="fas fa-home"></i> <strong>Home</strong></a>
+			<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   			 <span class="navbar-toggler-icon"></span>
+ 			 </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li><a class="nav-item nav-link active" href="AboutMe.html"><i class="fas fa-male"></i> <strong>About Me</strong></a></li>
+				<li><a class="nav-item nav-link active" href="Assignments.html"><i class="fas fa-laptop"></i> <strong>Assignments</strong></a></li>
+				<li><a class="nav-item nav-link active" href="Finalproject.html"><i class="far fa-lightbulb"></i> <strong>Final Project</strong></a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+
+<!-- Assingment 1 -->
+<div class="container">
+	<h1 class="text-center">Electronics 101</h1>
+	
+	<h3>Overview</h3>
+	<p>
+		For this week assignment, we need to make a circuit that control a motor using LDR.
+	</p>
+	
+	<p>
+		Let's start as usual with <strong>My Objective</strong> For this project:
+	</p>
+	
+	<p>
+		<ul>
+			<li>Create different circuit that meet the same objective</li>
+			<li>Try using Gif in documentation</li>
+		</ul>
+
+	</p>
+
+	<p>
+		My Plan:
+	</p>		
+		
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (1): Create the design</p>
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (2): Use Proteus for simulation</p>
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (3): Use Eagle for Sch and Pcb</p>		
+	<hr>
+
+	<!-- the process -->
+	<h3>The Process</h3>
+	<h4>Intro to Electronics</h4>	
+		<p>
+			They store your money. They monitor your heartbeat. They carry the sound of your voice into other people's homes. They bring airplanes into land and guide cars safely to their destination—they even fire off the airbags if we get into trouble. It's amazing to think just how many things "they" actually do. "They" are electrons: tiny particles within atoms that march around defined paths known as circuits carrying electrical energy. One of the greatest things people learned to do in the 20th century was to use electrons to control machines and process information. The electronics revolution, as this is known, accelerated the computer revolution and both these things have transformed many areas of our lives. But how exactly do nanoscopically small particles, far too small to see, achieve things that are so big and dramatic.
+		</p>
+		<p>
+			Plz visit this simple easy <a href="https://www.explainthatstuff.com/electronics.html">artical</a> that explain more.
+		</p>
+			
+	<hr id="smline">
+	<h4>Using Protues !!</h4>
+		<p>
+			The Proteus Design Suite is a proprietary software tool suite used primarily for electronic design automation. The software is used mainly by electronic design engineers and technicians to create schematics and electronic prints for manufacturing printed circuit boards
+		</p>
+		<p>
+			It includes alot of features including netlist based PCB design with auto-placement, auto-routing and graph based simulation
+		</p>
+		<p> 
+			Find more about Protues and why you should use it <a href="https://www.labcenter.com/">here</a>
+		</p>
+		<p>
+			Getting started with protues :
+		</p>
+		<p>	
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/GYAHwYUUs34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+		<h5>Circuit simulation</h5>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="img-thumbnail">
+					<img src="cir1.png" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">	
+					<img src="SavedFreeScreenRecorderProject1.gif" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>In this simple circuit the LDR control the flow of electrons through the transistor base in which it work as a switch that turn the motor on and off</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="SavedFreeScreenRecorderProject2.gif" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>
+							This a more advanced circuit using four Transistor <strong>"H-bridge"</strong> in which we control the speed of the motor using the LDR and the direction using the switch.
+						</li>
+						<li>
+							<a href="https://www.build-electronic-circuits.com/h-bridge/">Here</a> you can find more info about how H-bridge circuit work and how to control it  
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	<hr id="smline">
+	
+	<h4>Sch & PCB Design</h4>
+	<p>
+		We can use alot of cad software ,but we choose <strong>Eagle</strong> as it easily applicable graphical electronic design automation application with schematic capture, printed circuit board layout, auto-router and computer-aided manufacturing features.
+	</p>
+	<p> 
+			Find more about Egale with this Getting Started toturials <a href="https://www.autodesk.com/products/eagle/learning-center">here</a>
+	</p>
+	<h5>The Process</h5>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="eagle1.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>
+							open Eagle-cad.
+						</li>
+						<li>
+							Choose new Schematic.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="eagle2.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>
+							Add the circuit component.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="eagle3.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>
+							Time to wire the circuit.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="eagle4.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>
+							Let's generate the PCB layout.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="eagle5.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>
+							It's not smart enough to put everything inside
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="eagle6.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>
+							Arrange everything !
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="eagle7.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>
+							Now it's routing time
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="eagle8.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>
+							DooooOOooone !!
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<hr id="smline">
+		<h4>The Real Deal ^^</h4>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="cir2.jpg" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="cir3.jpg" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+		</div>
+		<p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/peR52LCP_gk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+
+</div>	
+	
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
