@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script src="https://kit.fontawesome.com/7e00ded5b8.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Shakankerystyle.css">
+
+	<!-- style css -->
+	<style type="text/css">
+		p{
+			font-size: 1.2em;
+			font-weight: 500;
+		}
+
+		h1,h2,h3,h4,h5{
+			font-weight: bold;
+			text-decoration-line: underline;
+		}
+		li{
+			font-weight: bold;
+		}
+		#tips{
+			background: #ecf0f1;
+			border: 1px solid #2c3e50;
+		}
+		#do{
+			color: green;
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+		#don{
+			color: red;
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+		#test{
+			font-size: 1em;
+		}
+
+		#D2{
+			background: #ecf0f1;
+
+		}
+	</style>
+
+
+	<title>Programming</title>
+</head>
+<body>
+
+<!-- NavBar -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
+			<a class="navbar-brand" href="index.html"><i class="fas fa-home"></i> <strong>Home</strong></a>
+			<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   			 <span class="navbar-toggler-icon"></span>
+ 			 </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li><a class="nav-item nav-link active" href="AboutMe.html"><i class="fas fa-male"></i> <strong>About Me</strong></a></li>
+				<li><a class="nav-item nav-link active" href="Assignments.html"><i class="fas fa-laptop"></i> <strong>Assignments</strong></a></li>
+				<li><a class="nav-item nav-link active" href="Finalproject.html"><i class="far fa-lightbulb"></i> <strong>Final Project</strong></a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+
+<!-- Assingment 1 -->
+<div class="container">
+	<h1 class="text-center">Programming 101</h1>
+	
+	<h3>Overview</h3>
+	<p>
+		For this week assignment, we need to control motor-LDR-circuit using Arduino.
+	</p>
+	
+	<p>
+		Let's start as usual with <strong>My Objective</strong> For this project:
+	</p>
+	
+	<p>
+		<ul>
+			<li>Learn new arduino simulation software Tinkercad</li>
+		</ul>
+
+	</p>
+
+	<p>
+		My Plan:
+	</p>		
+		
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (1): Create the design and write the code</p>
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (2): Use Tinkercad for simulation</p>
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (3): Robotic kit+Bluetooth+Arduino</p>		
+	<hr>
+
+	<!-- the process -->
+	<h3>The Process</h3>
+	<h4>Intro to Arduino</h4>	
+	<div class="row">
+		<div class="col-md-6">
+			<div class="img-thumbnail">
+				<img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/520x330/604a3538c15e081937dbfbd20aa60aad/a/0/a000066_featured_4.jpg" class="img-fluid" alt="Responsive image">
+			</div>
+		</div>
+		<div class="col-md-6">
+		<p>
+			Arduino is an open-source prototyping platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online.
+		</p>
+		<p>
+			Find more about Arduino and why to use it <a href="https://www.arduino.cc/en/guide/introduction">Here</a>.
+		</p>
+		</div>
+		<div class="col-md-12">
+			<p>Getting started in 15 min:</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/nL34zDTPkcs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+			<p>More Detalies tutorials</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/d8_xXNcGYgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>		
+		</div>
+	</div>
+			
+	<hr id="smline">
+	<h4>Using Tinkercad !!</h4>
+		<p>
+			Tinkercad is an easy-to-use 3D CAD design tool. Quickly turn your idea into a CAD model.
+		</p>
+		<p> 
+			Find more about Tinkercad and why you should use it <a href="https://blog.tinkercad.com/">here</a>
+		</p>
+		<p>
+			Getting started with Tinkercad :
+		</p>
+		<p>	
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/UlcvqkYCsvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+		<h5>Circuit</h5>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="img-thumbnail">
+					<img src="Exquisite Rottis.png" class="img-fluid" alt="Responsive image">
+				</div>
+				<p>
+					The circuit is really simple. Arduino read the signal from the LDR then convert it to digital value that control speed of the motor using the concept of pulse width modulatuion (PWM).
+				</p>
+			</div>
+		</div>
+		<h5>Component</h5>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="img-thumbnail">	
+					<img src="com1.png" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="img-thumbnail">	
+					<img src="com2.png" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="img-thumbnail">	
+					<img src="com3.png" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="img-thumbnail">	
+					<img src="com4.png" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="img-thumbnail">	
+					<img src="com5.png" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="img-thumbnail">	
+					<img src="com6.png" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="img-thumbnail">	
+					<img src="com7.png" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="img-thumbnail">	
+					<img src="com8.png" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+		</div>
+
+	<hr id="smline">
+	
+	<h4>The Process</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="img-thumbnail">
+					<img src="arduino controll.gif" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>
+							Building the circuit.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="img-thumbnail">
+					<img src="arduino controllcode.gif" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>
+							Writing the code.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="img-thumbnail">
+					<img src="arduino controllsimulation.gif" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>
+							Simulation.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<h5>Simualtion vs Reality</h5>
+		<p>
+			In simulation I used pin 8 and it work ,but in real world pin 8 doesn't support PWM so we need to use one of the supportwed pins "3,5,6,9,10,11". 
+			for more in depth info about PWM plz read this <a href="https://learn.sparkfun.com/tutorials/pulse-width-modulation/all">artical </a>
+		</p>
+
+
+		<hr id="smline">
+		<h4>Arduino-Bluetooth</h4>	
+		<div class="row">
+			<div class="col-md-6">
+				<p>
+					In this example we will sending signals to arduino using bluetooth to control a Rc car.
+				</p>
+				<p>
+					A Bluetooth device works by using radio waves instead of wires or cables to connect with your cell phone, smartphone or computer. Bluetooth is a wireless short-range communications technology standard found in millions of products we use every day – including headsets, smartphones, laptops and portable speakers.
+				</p>
+				<p>
+					we will going to use Hc-05 Module.
+				</p>
+				<p>
+					you can find the code <a href="https://drive.google.com/file/d/1z57uwWtn6NAnzqf-z2BwRP941kCMxjNI/view?usp=sharing">here </a>.
+				</p>
+				
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="https://components101.com/sites/default/files/component_pin/HC-05-Bluetooth-Module-Pinout.png" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+		</div>
+
+</div>	
+	
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
