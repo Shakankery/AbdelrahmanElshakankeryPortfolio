@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script src="https://kit.fontawesome.com/7e00ded5b8.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Shakankerystyle.css">
+
+	<!-- style css -->
+	<style type="text/css">
+		p{
+			font-size: 1.2em;
+			font-weight: 500;
+		}
+
+		h1,h2,h3,h4,h5{
+			font-weight: bold;
+			text-decoration-line: underline;
+		}
+		li{
+			font-weight: bold;
+		}
+		#tips{
+			background: #ecf0f1;
+			border: 1px solid #2c3e50;
+		}
+		#do{
+			color: green;
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+		#don{
+			color: red;
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+		#test{
+			font-size: 1em;
+		}
+
+		#D2{
+			background: #ecf0f1;
+
+		}
+	</style>
+
+
+	<title>3D Design</title>
+</head>
+<body>
+
+<!-- NavBar -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
+			<a class="navbar-brand" href="index.html"><i class="fas fa-home"></i> <strong>Home</strong></a>
+			<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   			 <span class="navbar-toggler-icon"></span>
+ 			 </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li><a class="nav-item nav-link active" href="AboutMe.html"><i class="fas fa-male"></i> <strong>About Me</strong></a></li>
+				<li><a class="nav-item nav-link active" href="Assignments.html"><i class="fas fa-laptop"></i> <strong>Assignments</strong></a></li>
+				<li><a class="nav-item nav-link active" href="Finalproject.html"><i class="far fa-lightbulb"></i> <strong>Final Project</strong></a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+
+<!-- Assingment 1 -->
+<div class="container">
+	<h1 class="text-center">3D Design</h1>
+	
+	<h3>Overview</h3>
+	<p>
+		For this task, we need to design a 3D module that cann't be made using subtractive technology
+	</p>
+	
+	<p>
+		Let's start as usual with <strong>My Objective</strong> For this project:
+	</p>
+	
+	<p>
+		<ul>
+			<li>Test my steps and previouse knowledge as it has been a while since I design a 3D module</li>
+
+			<li>
+				If I will be able to 3D printed, use acrylic color to make it look more realistic
+			</li>
+		</ul>
+
+	</p>
+
+	<p>
+		My Plan:
+	</p>		
+		
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (1): Make sure what non subtractive mean</p>
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (2): Find inspiration and create a design concept</p>
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (3): Sketch the design on fusion 360</p>
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (4): Refining process</p>
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (5): Time for CURA</p>		
+	<hr>
+
+	<!-- the process -->
+	<h3>The Process</h3>
+	<h4>Make sure What non-subtractive mean</h4>	
+	<div class="row">
+		<div class="col-md-12">
+		<p>
+			At the beginning I asked myself what non-subtractive mean ? I found that it mean a design that CNC machine cann't do, but really what's the condition for such a design to say that a CNC machine won't be able to fabricated
+		</p>
+		<p>
+			I found it down to :: <strong>Design Accuracy, Design Geometry, Design Complexity</strong> in another word it all about module level of details, type of material and if the design is consist of an object inside another one. 
+		</p>
+		<p>
+			I decided to create an object inside another one, but in a condition to be a parametric design. it's time now to find inspiration to my design.
+		</p>
+		</div>
+	</div>
+			
+	<hr id="smline">
+	<h4>Time to Get inspired</h4>
+		<div class="row">
+			<div class="col-md-6" >
+				<p>
+				 I search in the work of previous fab-academy students. I found their work very informative and it give me an intial idea about my design  
+				</p>
+				<p>
+					And I advise you to do the same you can find down below the links to my favorite fab-academy students
+				</p>
+				<p><a href="http://archive.fabacademy.org/2018/labs/barcelona/students/javier-alboguijarro/week3.html">Javier Alboguijarro</a></p>
+				<p><a href="http://archive.fabacademy.org/fabacademy2017/fablabverket/students/21/computer-controlled-cutting.html">Hanne Eriksen</a></p>
+				<p><a href="http://archive.fabacademy.org/2018/labs/fablabegypt/students/omar-okasha/assignment4.html">Omar Okasha</a></p>
+				<p><a href="http://archive.fabacademy.org/2018/labs/fablabegypt/students/haithem-abdelkhalek/week4.html">Haithem Abdelkhalek</a></p>
+				<p><a href="http://archive.fabacademy.org/archives/2017/fablabegypt/students/469/computer_controlled_cutting.html">May Eldardiry</a></p>
+				<p><a href="http://fab.academany.org/2018/labs/barcelona/students/joris-navarro/classes/04--computer-controlled-cutting/">Joris Navarro</a></p>
+				<p> <a href="http://fab.cba.mit.edu/classes/863.13/people/kathy/week1.html">Kathy</a></p>
+				<p> <a href="http://fabacademy.org/2019/labs/egypt/students/nada-abdelfattah/assignments/week04/">Nada abdelfattah</a></p>
+				<p><a href="http://archive.fabacademy.org/2016/fablabsingapore/students/98/exercise03.html">Steven Chew</a></p>
+
+				<p>
+
+			</div>
+			<div class="col-md-6">
+				<p>
+					From <strong>Kathy Design</strong>
+					I get the idea to create somthing locked inside a cage
+				</p>
+				<div class="img-thumbnail">
+					<img src="http://fab.cba.mit.edu/classes/863.13/people/kathy/week3/birdcage_inSW.jpg" class="img-fluid" alt="Responsive image">
+				</div>
+
+			</div>
+		</div>
+
+	<hr id="smline">
+	<h4>Using Fusion 360 + Refining process</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="img-thumbnail">
+					<img src="fusionfinal.gif" class="img-fluid" alt="Responsive image">
+				</div>
+				<p>
+					The design is really simple it's about an existing location that is inside a cage.
+				</p>
+			</div>
+		</div>
+
+	<h5>The steps</h5>
+		<div class="row">
+			<div class="col-md-6">
+			<div class="img-thumbnail">
+					<img src="sketch1.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>Start by sketch a circle then extrude it.</li>
+					</ul>
+			</div>
+			</div>
+			<div class="col-md-6">
+			<div class="img-thumbnail">
+					<img src="sketch2.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>Add the 8 Rods</li>
+					</ul>
+			</div>
+			</div>
+			<div class="col-md-6">
+			<div class="img-thumbnail">
+					<img src="sketch3.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li>Build the top of the cage</li>
+					</ul>
+			</div>
+			</div>
+			<div class="col-md-6">
+			<div class="img-thumbnail">
+					<img src="sketch4.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li></li>
+					</ul>
+			</div>
+			</div>
+			<div class="col-md-6">
+			<div class="img-thumbnail">
+					<img src="sketch5.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li></li>
+					</ul>
+			</div>
+			</div>
+			<div class="col-md-6">
+			<div class="img-thumbnail">
+					<img src="sketch6.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li></li>
+					</ul>
+			</div>
+			</div>
+			<div class="col-md-6">
+			<div class="img-thumbnail">
+					<img src="sketch7.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li></li>
+					</ul>
+			</div>
+			</div>
+			<div class="col-md-6">
+			<div class="img-thumbnail">
+					<img src="sketch8.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li></li>
+					</ul>
+			</div>
+			</div>
+			<div class="col-md-6">
+			<div class="img-thumbnail">
+					<img src="sketch9.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li></li>
+					</ul>
+			</div>
+			</div>
+			<div class="col-md-6">
+			<div class="img-thumbnail">
+					<img src="sketch10.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li></li>
+					</ul>
+			</div>
+			</div>
+			<div class="col-md-6">
+			<div class="img-thumbnail">
+					<img src="sketch11.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li></li>
+					</ul>
+			</div>
+			</div>
+			<div class="col-md-6">
+			<div class="img-thumbnail">
+					<img src="sketch12.png" class="img-fluid" alt="Responsive image">
+					<ul>
+						<li></li>
+					</ul>
+			</div>
+			</div>
+		</div>
+		
+
+	<hr id="smline">
+	<h4>It's Cura Time</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="img-thumbnail">
+					<img src="curaF.gif" class="img-fluid" alt="Responsive image">
+				</div>
+				<p class="text-center">
+					The slicing process.
+				</p>
+			</div>
+		</div>
+		<p>
+			Let's Go Quickly with the meaning of cura parameters so you can get an idea about what is the meaning mine <strong>Okasha's advice</strong> ..
+		</p>
+		<p>
+			1) Quality : Here You Select your Layer Height to Can control how much material You need to work with and To make your design more Presice
+		</p>
+		<p>
+
+			2) Shell : Here we Define the Wall Thickness and top Bottom Thickness as you control here how much solid is the last surface ..
+		</p>
+		<p>
+			3) Infill : This is how to control the infill denisty and How the Infill Looks like as there are a lot of shapes for the Infill
+		</p>
+		<p>
+			4) Material : Here control Retraction to Reduce it .
+		</p>
+		<p>
+			5) Speed : Here control the Printing Speed and Better not to play with it ..
+		</p>
+		<p>
+			6) Cooling : Here you select if you need cooling while printing or not ..
+		</p>
+		<p>
+			7) Support : Type of Support and If you need it Everywhere or not .. You can add here the type of support " Support Pattern "
+		</p>
+		<p>
+			8) Build plate : To make the Print Stick to the Bed
+
+		</p>
+		<div class="row">
+		<div class="col-md-2">
+		</div>
+
+			<div class="col-md-8">
+				<p class="text-center">
+					<strong>Print Parameters</strong>
+				</p>
+				<ol>
+					<li>
+						<strong>Profile:</strong>Normal.
+					</li>
+					<li>
+						<strong>layer height:</strong>0.15.
+					</li>
+					<li>
+						<strong>Infill:</strong>Concentric with density=20%
+					</li>
+					<li>
+						<strong>Material:</strong>Temp=200, Build plate=60
+					</li>
+					<li>
+						<strong>Speed:</strong>50.
+					</li>
+					<li>
+						<strong>Supoort:</strong> Everywhere, lines pattern, 5% density.
+					</li>
+				</ol>
+				
+			</div>
+	</div>
+
+	<hr id="smline">
+
+	
+</div>	
+	
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
