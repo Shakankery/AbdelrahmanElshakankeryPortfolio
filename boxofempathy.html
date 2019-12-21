@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script src="https://kit.fontawesome.com/7e00ded5b8.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Shakankerystyle.css">
+
+	<!-- style css -->
+	<style type="text/css">
+		p{
+			font-size: 1.2em;
+			font-weight: 500;
+		}
+
+		h1,h2,h3,h4,h5{
+			font-weight: bold;
+			text-decoration-line: underline;
+		}
+		li{
+			font-weight: bold;
+		}
+		#tips{
+			background: #ecf0f1;
+			border: 1px solid #2c3e50;
+		}
+		#do{
+			color: green;
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+		#don{
+			color: red;
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+		#test{
+			font-size: 1em;
+		}
+
+		#D2{
+			background: #ecf0f1;
+
+		}
+	</style>
+
+
+	<title>Electronics Design and Programming</title>
+</head>
+<body>
+
+<!-- NavBar -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
+			<a class="navbar-brand" href="index.html"><i class="fas fa-home"></i> <strong>Home</strong></a>
+			<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   			 <span class="navbar-toggler-icon"></span>
+ 			 </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li><a class="nav-item nav-link active" href="AboutMe.html"><i class="fas fa-male"></i> <strong>About Me</strong></a></li>
+				<li><a class="nav-item nav-link active" href="Assignments.html"><i class="fas fa-laptop"></i> <strong>Assignments</strong></a></li>
+				<li><a class="nav-item nav-link active" href="Finalproject.html"><i class="far fa-lightbulb"></i> <strong>Final Project</strong></a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+
+<!-- Assingment 1 -->
+<div class="container">
+	<h1 class="text-center">Box of Empathy</h1>
+	
+	<h3>Overview</h3>
+	<p>
+		For this task, we need to create a moode booster using arduino and LCD.
+	</p>
+	
+	<p>
+		My Plan:
+	</p>		
+		
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (1): Prototyping Design</p>
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (2): Coding + test</p>
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (3): Time to solder</p>
+		<p><i class="fas fa-check-square"></i> <strong>Step</strong> (4): Refining process</p>
+		
+	<hr>
+
+	<!-- the process -->
+	<h3>The Process</h3>
+	<h4>Prototyping Design</h4>	
+	<div class="row">
+		<div class="col-md-12">
+		<p>
+			I started as usual using a bread board to connect the LCD with arduino and the two push button just to make sure the wiring is Good.
+		</p>
+		<div class="col-md-2">
+			<p></p>
+		</div>
+		<div class="col-md-8">
+				<div class="img-thumbnail">
+					<img src="http://fab.cba.mit.edu/classes/863.13/people/kathy/week3/birdcage_inSW.jpg" class="img-fluid" alt="Responsive image">
+				</div>
+
+			</div>
+		<h5 class="text-center">Wiring process</h5>	
+		<div class="col-md-6">
+			<p>
+				for the LCD:
+			</p>
+			<ul>
+				<li>LCD K & Vss pin to GNd</li>
+				<li>LCD A & VDD pin to 5 Volt</li>
+				<li>LCD RS pin to digital pin 12</li>
+				<li>LCD Enable pin to digital pin 11</li>
+				<li>LCD D4 pin to digital pin 5</li>
+				<li>LCD D5 pin to digital pin 4 </li>
+				<li>LCD D6 pin to digital pin 3</li>
+				<li>LCD D7 pin to digital pin 2</li>
+				<li>LCD Vo pin to the middle pin of 10K var.Resistor</li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="col-md-6">
+			<p>
+				for the PushButton:
+			</p>
+			<ul>
+				<li>Happy Button-First leg to 5V</li>
+				<li>second leg to 1K resistor & arduino pin 6</li>
+				<li>Sad Button First leg to 5V</li>
+				<li>second leg to 1K resistor & arduino pin 7</li>
+			</ul>
+		</div>
+	</div>
+</div>
+	<hr id="smline">
+	<h4>Code and testing</h4>
+		<div class="row">
+			<div class="col-md-6">
+				<p>
+					
+				</p>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="code.png" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+		</div>
+
+	<hr id="smline">
+	<h4>Soldering Time</h4>
+	<div class="row">
+			<div class="col-md-6">
+				<p>
+					
+				</p>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="back.JPG" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+		</div>
+
+	<hr id="smline">
+	<h4>Refining process</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="img-thumbnail">
+					<img src="solder.JPG" class="img-fluid" alt="Responsive image">
+				</div>
+				<p class="text-center">
+					The final output.
+				</p>
+			</div>
+			<div class="col-md-6">
+				<p>
+					
+				</p>
+			</div>
+			<div class="col-md-6">
+				<div class="img-thumbnail">
+					<img src="ref.png" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="img-thumbnail">
+					<img src="solder.JPG" class="img-fluid" alt="Responsive image">
+				</div>
+				<p class="text-center">
+					The final video.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<hr id="smline">
+
+	
+</div>	
+	
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
